@@ -1,0 +1,209 @@
+.TH ZWS 1 "September 2014" "Version 1.0" "User Commands"
+
+.SH NAME
+zws - a tiny HTTP web server
+
+.SH SYNOPSIS
+.B zws
+[\fIOPTIONS\fR] \fB-m\fR \fIPATH\fR
+
+.SH DESCRIPTION
+zws (Zepto Web Server) is a tiny open source HTTP web server well-written in C that can handle simple HTTP requests and serve information in HTML format by using dynamic modules that can be loaded at runtime.
+.LP
+Also, the HTTP web server runs as a daemon process and is designed according to the MPM (Multi-Processing Module) architecture that allows multiple requests to be processed almost simultaneously. The main server daemon process creates and maintains various server workers which handle incoming requests.
+
+.SH OPTIONS
+Mandatory arguments to long options are mandatory for short options too.
+.TP
+\fB-a\fR, \fB--address\fR=\fIADDRESS\fR
+The address of the server.
+.TP
+\fB-p\fR, \fB--port\fR=\fINUMBER\fR
+The port of the server.
+.TP
+\fB-w\fR, \fB--workers\fR=\fINUMBER\fR
+The number of the service workers of the server.
+.TP
+\fB-r\fR, \fB--requests\fR=\fINUMBER\fR
+The number of the requests per service worker.
+.TP
+\fB-m\fR, \fB--modules\fR=\fIPATH\fR
+The modules path of the server.
+.TP
+\fB--help\fR
+Display help and exit.
+.TP
+\fB--version\fR
+Display version and exit.
+
+.SH EXAMPLES
+.B zws -m /home/user/zws/modules
+
+.RS 3
+Server Address = \fI0.0.0.0\fR
+.br
+Server Port = \fIRandom\fR
+.br
+Server Workers = \fI1\fR
+.br
+Worker Requests = \fI1\fR
+.RE
+
+.B zws -m /home/user/zws/modules -a localhost
+
+.RS 3
+Server Address = A) \fI127.0.0.1\fR or B) \fI::1\fR (takes higher priority)
+.br
+Server Port = \fIRandom\fR
+.br
+Server Workers = \fI1\fR
+.br
+Worker Requests = \fI1\fR
+.RE
+
+.B zws -m /home/user/zws/modules -a 127.0.0.1
+
+.RS 3
+Server Address = \fI127.0.0.1\fR
+.br
+Server Port = \fIRandom\fR
+.br
+Server Workers = \fI1\fR
+.br
+Worker Requests = \fI1\fR
+.RE
+
+.B zws -m /home/user/zws/modules -a ::1
+
+.RS 3
+Server Address = \fI::1\fR
+.br
+Server Port = \fIRandom\fR
+.br
+Server Workers = \fI1\fR
+.br
+Worker Requests = \fI1\fR
+.RE
+
+.B zws -m /home/user/zws/modules -a 192.168.1.4
+
+.RS 3
+Server Address = \fI192.168.1.4\fR
+.br
+Server Port = \fIRandom\fR
+.br
+Server Workers = \fI1\fR
+.br
+Worker Requests = \fI1\fR
+.RE
+
+.B zws -m /home/user/zws/modules -a fe80::222:43ef:ff36:c079%wlan0
+
+.RS 3
+Server Address = \fIfe80::222:43ef:ff36:c079%wlan0\fR
+.br
+Server Port = \fIRandom\fR
+.br
+Server Workers = \fI1\fR
+.br
+Worker Requests = \fI1\fR
+.RE
+
+.B zws -m /home/user/zws/modules -p 5643
+
+.RS 3
+Server Address = \fI0.0.0.0\fR
+.br
+Server Port = \fI5643\fR
+.br
+Server Workers = \fI1\fR
+.br
+Worker Requests = \fI1\fR
+.RE
+
+.B zws -m /home/user/zws/modules -a 192.168.1.4 -p 5643
+
+.RS 3
+Server Address = \fI192.168.1.4\fR
+.br
+Server Port = \fI5643\fR
+.br
+Server Workers = \fI1\fR
+.br
+Worker Requests = \fI1\fR
+.RE
+
+.B zws -m /home/user/zws/modules --address=localhost --port=5643
+
+.RS 3
+Server Address = A) \fI127.0.0.1\fR or B) \fI::1\fR (takes higher priority)
+.br
+Server Port = \fI5643\fR
+.br
+Server Workers = \fI1\fR
+.br
+Worker Requests = \fI1\fR
+.RE
+
+.B zws -m /home/user/zws/modules -w 30
+
+.RS 3
+Server Address = \fI0.0.0.0\fR
+.br
+Server Port = \fIRandom\fR
+.br
+Server Workers = \fI30\fR
+.br
+Worker Requests = \fI1\fR
+.RE
+
+.B zws -m /home/user/zws/modules -r 20
+
+.RS 3
+Server Address = \fI0.0.0.0\fR
+.br
+Server Port = \fIRandom\fR
+.br
+Server Workers = \fI1\fR
+.br
+Worker Requests = \fI20\fR
+.RE
+
+.B zws -m /home/user/zws/modules --address=localhost --port=5643 --workers=30 --requests=20
+
+.RS 3
+Server Address = A) \fI127.0.0.1\fR or B) \fI::1\fR (takes higher priority)
+.br
+Server Port = \fI5643\fR
+.br
+Server Workers = \fI30\fR
+.br
+Worker Requests = \fI20\fR
+.RE
+
+.B zws -m /home/user/zws/modules -a 192.168.1.4 -p 5643 -w 30 -r 10
+
+.RS 3
+Server Address = \fI192.168.1.4\fR
+.br
+Server Port = \fI5643\fR
+.br
+Server Workers = \fI30\fR
+.br
+Worker Requests = \fI10\fR
+.RE
+
+.SH AUTHOR
+Written by Efstathios Chatzikyriakidis.
+
+.SH "REPORTING BUGS"
+Report bugs to <contact@efxa.org>.
+
+.SH COPYRIGHT
+Copyright \(co 2014 Efstathios Chatzikyriakidis <contact@efxa.org>.
+.LP
+License GPLv3: GNU GPL version 3 <http://gnu.org/licenses/gpl.html>.
+.LP
+This is free software: you are free to change and redistribute it.
+.LP
+There is NO WARRANTY, to the extent permitted by law.

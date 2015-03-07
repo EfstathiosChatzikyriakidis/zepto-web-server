@@ -1,0 +1,161 @@
+msgid   ""
+msgstr  "Project-Id-Version: PACKAGE VERSION\n"
+        "Report-Msgid-Bugs-To: <EMAIL@ADDRESS>\n"
+        "POT-Creation-Date: 2014-09-22 21:10+0300\n"
+        "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+        "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+        "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+        "MIME-Version: 1.0\n"
+        "Content-Type: text/plain; charset=UTF-8\n"
+        "Content-Transfer-Encoding: 8bit\n"
+
+#: daemonize-utility.c:35
+msgid   "Failed to create a new process."
+msgstr  ""
+
+#: daemonize-utility.c:37
+msgid   "Failed to create a new session."
+msgstr  ""
+
+#: daemonize-utility.c:39
+msgid   "Failed to open the virtual null device file."
+msgstr  ""
+
+#: daemonize-utility.c:41
+msgid   "Failed to redirect the standard I/O streams."
+msgstr  ""
+
+#: daemonize-utility.c:43
+msgid   "Failed to change the working directory."
+msgstr  ""
+
+#: daemonize-utility.c:45
+msgid   "Failed to write the pid file."
+msgstr  ""
+
+#: daemonize-utility.c:47
+msgid   "Failed to remove the pid file."
+msgstr  ""
+
+#: daemonize-utility.c:49
+msgid   "Failed to close the file descriptor:"
+msgstr  ""
+
+#: daemonize-utility.c:51
+msgid   "Failed to close the descriptor of the virtual null device file."
+msgstr  ""
+
+#: daemonize-utility.c:53
+msgid   "The pid file is not readable."
+msgstr  ""
+
+#: daemonize-utility.c:55
+msgid   "Another instance probably is running."
+msgstr  ""
+
+#: preforking-server-utility.c:31
+msgid   "Failed to create a new service worker in the server."
+msgstr  ""
+
+#: preforking-server-utility.c:33
+msgid   "Failed to clean the service workers of the server."
+msgstr  ""
+
+#: preforking-server-utility.c:35
+msgid   "Failed to initialize the set of the blocked signals."
+msgstr  ""
+
+#: preforking-server-utility.c:37
+msgid   "Failed to add the SIGCHLD signal in the set of the blocked signals."
+msgstr  ""
+
+#: preforking-server-utility.c:39
+msgid   "Failed to enable the set of the blocked signals."
+msgstr  ""
+
+#: preforking-server-utility.c:41
+msgid   "Failed to disable the set of the blocked signals."
+msgstr  ""
+
+#: server-helper-utilities.c:30
+msgid   "Failed to allocate memory for the socket address."
+msgstr  ""
+
+#: server-helper-utilities.c:32
+msgid   "Failed to get the socket name."
+msgstr  ""
+
+#: server-utility.c:35
+msgid   "Failed to connect the server socket."
+msgstr  ""
+
+#: server-utility.c:37
+msgid   "Failed to instruct the server socket to listen for incoming requests."
+msgstr  ""
+
+#: server-utility.c:39
+msgid   "Failed to disable the I/O blocking of the server socket descriptor."
+msgstr  ""
+
+#: server-utility.c:41
+msgid   "Failed to setup the signals support of the server."
+msgstr  ""
+
+#: server-utility.c:43 socket-utility.c:30
+msgid   "Failed to close the server socket descriptor."
+msgstr  ""
+
+#: server-utility.c:45
+msgid   "Failed to get the host name and the service of the server."
+msgstr  ""
+
+#: server-utility.c:47
+msgid   "The server listens on the following socket:"
+msgstr  ""
+
+#: server-workers-cleaning-utility.c:29
+msgid   "Failed to kill the service workers of the server."
+msgstr  ""
+
+#: server-worker-utility.c:34
+msgid   "Failed to setup the signals support for a service worker of the server."
+msgstr  ""
+
+#: server-worker-utility.c:36
+msgid   "Failed to close the client socket descriptor."
+msgstr  ""
+
+#: signal-dispatcher-utility.c:30
+msgid   "Failed to initialize the set of all signals."
+msgstr  ""
+
+#: signal-dispatcher-utility.c:32
+msgid   "Failed to change the action of the signal:"
+msgstr  ""
+
+#: standard-wrapped-utilities.c:30
+msgid   "Failed to allocate memory."
+msgstr  ""
+
+#: usage-information-utility.c:28
+msgid   "Usage:"
+msgstr  ""
+
+#: usage-information-utility.c:30
+msgid   "[OPTIONS] -m PATH"
+msgstr  ""
+
+#: usage-information-utility.c:33
+msgid   "  -a, --address=ADDRESS  The address of the server.                       \n"
+        "  -p, --port=NUMBER      The port of the server.                          \n"
+        "  -w, --workers=NUMBER   The number of the service workers of the server. \n"
+        "  -r, --requests=NUMBER  The number of the requests per service worker.   \n"
+        "  -m, --modules=PATH     The modules path of the server.                  \n"
+        "                                                                          \n"
+        "      --help             Display help and exit.                           \n"
+        "      --version          Display version and exit.                        \n"
+msgstr  ""
+
+#: usage-information-utility.c:42
+msgid   "Report bugs to"
+msgstr  ""

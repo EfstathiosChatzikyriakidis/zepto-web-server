@@ -1,0 +1,168 @@
+msgid   ""
+msgstr  "Project-Id-Version: zws 1.0\n"
+        "Report-Msgid-Bugs-To: <contact@efxa.org>\n"
+        "POT-Creation-Date: 2014-09-22 21:10+0300\n"
+        "PO-Revision-Date: 2014-09-22 22:10+0300\n"
+        "Last-Translator: Efstathios Chatzikyriakidis <contact@efxa.org>\n"
+        "Language-Team: Hellenic <contact@efxa.org>\n"
+        "MIME-Version: 1.0\n"
+        "Content-Type: text/plain; charset=UTF-8\n"
+        "Content-Transfer-Encoding: 8bit\n"
+
+#: daemonize-utility.c:35
+msgid   "Failed to create a new process."
+msgstr  "Αποτυχία δημιουργίας νέας διεργασίας."
+
+#: daemonize-utility.c:37
+msgid   "Failed to create a new session."
+msgstr  "Αποτυχία δημιουργίας νέας συνεδρίας."
+
+#: daemonize-utility.c:39
+msgid   "Failed to open the virtual null device file."
+msgstr  "Αποτυχία ανοίγματος του εικονικού αρχείου συσκευής NULL."
+
+#: daemonize-utility.c:41
+msgid   "Failed to redirect the standard I/O streams."
+msgstr  "Αποτυχία ανακατεύθυνσης των πρότυπων ρευμάτων εισόδου / εξόδου."
+
+#: daemonize-utility.c:43
+msgid   "Failed to change the working directory."
+msgstr  "Αποτυχία αλλαγής του καταλόγου εργασίας."
+
+#: daemonize-utility.c:45
+msgid   "Failed to write the pid file."
+msgstr  "Αποτυχία εγγραφής του αρχείου PID."
+
+#: daemonize-utility.c:47
+msgid   "Failed to remove the pid file."
+msgstr  "Αποτυχία διαγραφής του αρχείου PID."
+
+#: daemonize-utility.c:49
+msgid   "Failed to close the file descriptor:"
+msgstr  "Αποτυχία κλεισίματος του περιγραφέα αρχείου:"
+
+#: daemonize-utility.c:51
+msgid   "Failed to close the descriptor of the virtual null device file."
+msgstr  "Αποτυχία κλεισίματος του περιγραφέα του εικονικού αρχείου συσκευής NULL."
+
+#: daemonize-utility.c:53
+msgid   "The pid file is not readable."
+msgstr  "Το αρχείο PID δεν είναι αναγνώσιμο."
+
+#: daemonize-utility.c:55
+msgid   "Another instance probably is running."
+msgstr  "Ένα άλλο στιγμιότυπο πιθανότατα εκτελείται."
+
+#: preforking-server-utility.c:31
+msgid   "Failed to create a new service worker in the server."
+msgstr  "Αποτυχία δημιουργίας νέου εργάτη εξυπηρέτησης στον εξυπηρετητή."
+
+#: preforking-server-utility.c:33
+msgid   "Failed to clean the service workers of the server."
+msgstr  "Αποτυχία καθαρισμού των εργατών εξυπηρέτησης του εξυπηρετητή."
+
+#: preforking-server-utility.c:35
+msgid   "Failed to initialize the set of the blocked signals."
+msgstr  "Αποτυχία αρχικοποίησης του συνόλου των μπλοκαρισμένων σημάτων."
+
+#: preforking-server-utility.c:37
+msgid   "Failed to add the SIGCHLD signal in the set of the blocked signals."
+msgstr  "Αποτυχία προσθήκης του σήματος SIGCHLD στο σύνολο των μπλοκαρισμένων σημάτων."
+
+#: preforking-server-utility.c:39
+msgid   "Failed to enable the set of the blocked signals."
+msgstr  "Αποτυχία ενεργοποίησης του συνόλου των μπλοκαρισμένων σημάτων."
+
+#: preforking-server-utility.c:41
+msgid   "Failed to disable the set of the blocked signals."
+msgstr  "Αποτυχία απενεργοποίησης του συνόλου των μπλοκαρισμένων σημάτων."
+
+#: server-helper-utilities.c:30
+msgid   "Failed to allocate memory for the socket address."
+msgstr  "Αποτυχία δέσμευσης μνήμης για την διεύθυνση της δικτυακής υποδοχής."
+
+#: server-helper-utilities.c:32
+msgid   "Failed to get the socket name."
+msgstr  "Αποτυχία απόκτησης του ονόματος της δικτυακής υποδοχής."
+
+#: server-utility.c:35
+msgid   "Failed to connect the server socket."
+msgstr  "Αποτυχία σύνδεσης της δικτυακής υποδοχής του εξυπηρετητή."
+
+#: server-utility.c:37
+msgid   "Failed to instruct the server socket to listen for incoming requests."
+msgstr  "Αποτυχία ανάθεσης της δικτυακής υποδοχής του εξυπηρετητή στο να «ακούει» εισερχόμενες αιτήσεις."
+
+#: server-utility.c:39
+msgid   "Failed to disable the I/O blocking of the server socket descriptor."
+msgstr  "Αποτυχία απενεργοποίησης του μπλοκαρίσματος εισόδου / εξόδου του περιγραφέα της δικτυακής υποδοχής του εξυπηρετητή."
+
+#: server-utility.c:41
+msgid   "Failed to setup the signals support of the server."
+msgstr  "Αποτυχία εγκατάστασης της υποστήριξης σημάτων του εξυπηρετητή."
+
+#: server-utility.c:43 socket-utility.c:30
+msgid   "Failed to close the server socket descriptor."
+msgstr  "Αποτυχία κλεισίματος του περιγραφέα της δικτυακής υποδοχής του εξυπηρετητή."
+
+#: server-utility.c:45
+msgid   "Failed to get the host name and the service of the server."
+msgstr  "Αποτυχία απόκτησης του ονόματος υπολογιστή και της υπηρεσίας του εξυπηρετητή."
+
+#: server-utility.c:47
+msgid   "The server listens on the following socket:"
+msgstr  "Ο εξυπηρετητής «ακούει» στην ακόλουθη δικτυακή υποδοχή:"
+
+#: server-workers-cleaning-utility.c:29
+msgid   "Failed to kill the service workers of the server."
+msgstr  "Αποτυχία τερματισμού των εργατών εξυπηρέτησης του εξυπηρετητή."
+
+#: server-worker-utility.c:34
+msgid   "Failed to setup the signals support for a service worker of the server."
+msgstr  "Αποτυχία εγκατάστασης της υποστήριξης σημάτων ενός εργάτη εξυπηρέτησης του εξυπηρετητή."
+
+#: server-worker-utility.c:36
+msgid   "Failed to close the client socket descriptor."
+msgstr  "Αποτυχία κλεισίματος του περιγραφέα της δικτυακής υποδοχής του πελάτη."
+
+#: signal-dispatcher-utility.c:30
+msgid   "Failed to initialize the set of all signals."
+msgstr  "Αποτυχία αρχικοποίησης του συνόλου όλων των σημάτων."
+
+#: signal-dispatcher-utility.c:32
+msgid   "Failed to change the action of the signal:"
+msgstr  "Αποτυχία αλλαγής της ενέργειας του σήματος:"
+
+#: standard-wrapped-utilities.c:30
+msgid   "Failed to allocate memory."
+msgstr  "Αποτυχία δέσμευσης μνήμης."
+
+#: usage-information-utility.c:28
+msgid   "Usage:"
+msgstr  "Χρήση:"
+
+#: usage-information-utility.c:30
+msgid   "[OPTIONS] -m PATH"
+msgstr  "[ΕΠΙΛΟΓΕΣ] -m ΜΟΝΟΠΑΤΙ"
+
+#: usage-information-utility.c:33
+msgid   "  -a, --address=ADDRESS  The address of the server.                       \n"
+        "  -p, --port=NUMBER      The port of the server.                          \n"
+        "  -w, --workers=NUMBER   The number of the service workers of the server. \n"
+        "  -r, --requests=NUMBER  The number of the requests per service worker.   \n"
+        "  -m, --modules=PATH     The modules path of the server.                  \n"
+        "                                                                          \n"
+        "      --help             Display help and exit.                           \n"
+        "      --version          Display version and exit.                        \n"
+msgstr  "  -a, --address=ΔΙΕΥΘΥΝΣΗ  Η διεύθυνση του εξυπηρετητή.                        \n"
+        "  -p, --port=ΑΡΙΘΜΟΣ       Η πόρτα του εξυπηρετητή.                            \n"
+        "  -w, --workers=ΑΡΙΘΜΟΣ    Ο αριθμός των εργατών εξυπηρέτησης του εξυπηρετητή. \n"
+        "  -r, --requests=ΑΡΙΘΜΟΣ   Ο αριθμός των αιτήσεων ανά εργάτη εξυπηρέτησης.     \n"
+        "  -m, --modules=ΜΟΝΟΠΑΤΙ   Το μονοπάτι των φορτώσιμων μονάδων του εξυπηρετητή. \n"
+        "                                                                               \n"
+        "      --help               Εμφάνιση βοήθειας και έξοδος.                       \n"
+        "      --version            Εμφάνιση έκδοσης και έξοδος.                        \n"
+
+#: usage-information-utility.c:42
+msgid   "Report bugs to"
+msgstr  "Αναφορά σφαλμάτων στο"
